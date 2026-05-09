@@ -29,19 +29,15 @@ body{background:var(--white);color:var(--ink);font-family:'Noto Serif TC',serif;
 
 /* Video block — standalone, no text overlap */
 .hero-video-block{
-  position:relative;
   width:100%;
-  aspect-ratio:16/9;
-  overflow:hidden;
   background:var(--ink);
+  line-height:0;
 }
 .hero-video{
-  width:100%;height:100%;
-  object-fit:contain;
-  object-position:center center;
-  background:var(--ink);
-  opacity:1;
+  width:100%;
+  height:auto;
   display:block;
+  background:var(--ink);
 }
 .hero-video-bar{
   background:var(--ink);
@@ -252,7 +248,7 @@ footer{background:var(--ink);color:var(--white);padding:80px 64px 56px;}
   .explorer-badge{grid-template-columns:1fr;}
 }
 @media(max-width:600px){
-  .hero-video{object-fit:contain;object-position:center center;}
+  .hero-video{width:100%;height:auto;}
   .topbar{padding:0 20px;}
   .topbar-nav{display:none;}
   .hero-content{padding:36px 24px 48px;}
