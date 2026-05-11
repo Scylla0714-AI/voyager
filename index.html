@@ -40,7 +40,7 @@ body{background:var(--white);color:var(--ink);font-family:'Noto Serif TC',serif;
 .hero-en-sub{display:block;font-family:'Cormorant Garamond',serif;font-size:.9rem;font-weight:300;color:rgba(255,255,255,.28);letter-spacing:.14em;margin-top:14px;}
 
 /* STATS BAND */
-.stats-band{background:var(--ink);display:grid;grid-template-columns:1fr 1fr 1fr 1fr 2fr;}
+.stats-band{background:var(--ink);display:grid;grid-template-columns:repeat(5,1fr);}
 .stat-item{text-align:center;padding:36px 16px;border-right:1px solid rgba(255,255,255,.07);}
 .stat-item:last-child{border-right:none;}
 .stat-num{font-family:'Cormorant Garamond',serif;font-size:2.8rem;font-weight:600;color:var(--white);line-height:1;margin-bottom:6px;}
@@ -213,6 +213,10 @@ footer{background:var(--ink);color:var(--white);padding:80px 64px 56px;}
 .footer-copy{font-family:'Noto Sans TC',sans-serif;font-size:10px;color:rgba(255,255,255,.18);letter-spacing:.06em;}
 .footer-quote{font-family:'Cormorant Garamond',serif;font-size:13px;font-weight:400;color:rgba(255,255,255,.22);letter-spacing:.06em;}
 
+
+@media(min-width:961px){
+  .hero-video-block{width:50%;max-width:720px;margin:0 auto;}
+}
 /* REVEAL */
 .reveal{opacity:0;transform:translateY(26px);transition:opacity .72s,transform .72s;}
 .reveal.visible{opacity:1;transform:translateY(0);}
@@ -361,7 +365,7 @@ h1, h2, .hero-name, .gallery-place, .adv-card-place,
     <div class="stat-num-over">貝加爾湖</div>
     <div class="stat-label-over">西伯利亞 · 零下 37°</div>
   </div>
-  <div class="stat-item" style="grid-column:span 2;border-right:none;">
+  <div class="stat-item" style="border-right:none;">
     <div class="stat-num" style="font-size:3.5rem;"><span class="accent">∞</span></div>
     <div class="stat-label">個故事</div>
   </div>
